@@ -6,6 +6,8 @@ import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import profileImage from "../../assets/images/facebookLogo.png"; 
+
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -14,6 +16,13 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
+
+            <div className="contact-image-div">
+              <img
+                alt="Man working"
+                src={require("../../assets/images/facebookLogo.png")}
+              ></img>
+              </div>
             <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p
               className={
@@ -52,7 +61,7 @@ export default function Contact() {
               <SocialMedia />
             </div>
           </div>
-          <div className="contact-image-div">
+          {/* <div className="contact-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={email} />
             ) : (
@@ -61,7 +70,7 @@ export default function Contact() {
                 src={require("../../assets/images/contactMailDark.svg")}
               ></img>
             )}
-          </div>
+          </div> */}
         </div>
       </div>
     </Fade>

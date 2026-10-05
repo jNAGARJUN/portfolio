@@ -27,7 +27,7 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
+        <a href="/" className="logo" style={{ marginLeft: "80px" }}>
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
@@ -40,7 +40,7 @@ function Header() {
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
-        <ul className={isDark ? "dark-menu menu" : "menu"}>
+        <ul className={isDark ? "dark-menu menu" : "menu"} style={{ marginRight: "70px" }}>
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
@@ -51,17 +51,17 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewOpenSource && (
+          {/* {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
             </li>
-          )}
+          )} */}
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
             </li>
           )}
-          {viewBlog && (
+          {/* {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
             </li>
@@ -70,7 +70,7 @@ function Header() {
             <li>
               <a href="#talks">Talks</a>
             </li>
-          )}
+          )} */}
           {viewResume && (
             <li>
               <a href="#resume">Resume</a>
